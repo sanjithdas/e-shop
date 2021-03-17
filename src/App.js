@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+/**
+ * @author [Sanjith]
+ * @email [sanjith.das@gmail.com]
+ * @create date 2021-03-15 10:45:17
+ * @modify date 2021-03-15 14:53:36
+ * @desc [description]
+ */
+import React from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
+import Home from "./pages/Home";
+
+import Navigation from "./components/Navigation";
+import Header from "./components/common/layout/Header";
+import Footer from "./components/common/layout/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Switch>
+        <Route path="/" component={Home} />
+      </Switch>
+      <Footer />
+    </>
   );
 }
 

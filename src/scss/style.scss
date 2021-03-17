@@ -1,0 +1,24 @@
+// stlye.scss
+// to over ride bootstrap variables we need to place them above the import of bootstrap.
+// @see https://github.com/twbs/bootstrap-npm-starter/blob/main/scss/starter.scss
+
+/** 
+ * @todo update this to compile properly with bootstrap 5 + webpack https://github.com/twbs/bootstrap-npm-starter/issues/35 and here https://github.com/HansUXdev/bootstrap-npm-starter/tree/v5-beta
+**/
+
+// import our config
+@import "config";
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Add custom code after this
+// imports the _base.scss files
+@import "base";
+// @import "shorts";
+// @import "components/navbar";
+// @import "components/text";
+// @import "components/list";
+// @import "components/grid";
+// @import "components/form";
+// @import "components/utilities";
+// @import "components/mobile";

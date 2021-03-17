@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+// Global CSS styles
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: $dark;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+// .rounded-circle
+// .round-img {
+//   border-radius: 50%;
+// }
